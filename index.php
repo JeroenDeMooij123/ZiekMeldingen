@@ -23,9 +23,17 @@ navBarToggle.addEventListener("click", function() {
         <a href="/Ziekmeldingen/index.php" class="nav-links">Home</a>
       </li>
       <li>
-        <a href="/Ziekmeldingen/Ziekmelden.php" class="nav-links">Ziekmelden</a>
+        <a href="/Ziekmeldingen/Ziektoevoegen.php" class="nav-links">Leerling toevoegen</a>
       </li>
-
+      <li>
+        <a href="/Ziekmeldingen/Ziekmelden.php" class="nav-links">Leerling ziekmelden</a>
+      </li>
+      <li>
+        <a href="/Ziekmeldingen/Ziekbeter.php" class="nav-links">Leerling betermelden</a>
+      </li>
+      <li>
+        <a href="/Ziekmeldingen/Ziekdag.php" class="nav-links">Zieke vandaag</a>
+      </li>
     </ul>
   </nav>
   <meta name="viewport" content="width=device-width, initial-scale=1">

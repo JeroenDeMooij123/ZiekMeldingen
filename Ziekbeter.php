@@ -76,7 +76,7 @@ td{
         <?php
 		include "ziekmeldingDB.php";
         // Query om vliegtuigen op te halen
-        $query = "SELECT * FROM leerlingen WHERE status = 'beter'";
+        $query = "SELECT * FROM leerlingen WHERE status = 'ziek'";
         $stm = $con->prepare($query);
         if($stm->execute()== true){
             // Vliegtuigen uit het resultaat halen als objecten en opslaan in $airplanes
@@ -88,7 +88,7 @@ td{
                 ?>
                 
                 
-               <td><?php echo "<a href=ziekmeld.php?ID=".$vliegtuig->id.">".$vliegtuig->id."</a>"; ?></td>
+               <td><?php echo "<a href=ziekbetermeld.php?ID=".$vliegtuig->id.">".$vliegtuig->id."</a>"; ?></td>
                 <td><?php echo $vliegtuig->naam; ?> </td> 
                 <td><?php echo $vliegtuig->klas; ?> </td> 
                 <td><?php echo $vliegtuig->status; ?> </br></td>
